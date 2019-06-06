@@ -8,6 +8,7 @@ package bitcoin;
 /**
  *
  * @author soja
+ * @author Dario
  */
 public class Executor {
     public static void main(String[] args){
