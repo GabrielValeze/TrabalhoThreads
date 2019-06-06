@@ -17,6 +17,11 @@ public class Corretora {
     
     Cliente buffer;
     
+    public Corretora(){
+        bitcoinCorretora=100;
+        
+    }
+    
     public Corretora(Cliente cliente){
         buffer = cliente;
     }

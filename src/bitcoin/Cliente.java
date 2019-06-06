@@ -16,6 +16,10 @@ public class Cliente extends Thread{
 
     Corretora buffer;
     
+    public Cliente(){
+        dinheiroCliente=1000000;
+    }
+    
     public Cliente(Corretora corretora){
         buffer = corretora;
     }
@@ -64,5 +68,12 @@ public class Cliente extends Thread{
     public void setBitcoinCliente(double bitcoinCliente) {
         this.bitcoinCliente = bitcoinCliente;
     }
-
+    
+    public void run(){
+        while(true){
+            this.comprar(dinheiroCliente);
+            this.vender(bitcoinCliente);
+        }
+    }
+    
 }
